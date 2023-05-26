@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_graph"
+    app:startDestination="@id/topNewsFragment">
+
+    <fragment
+        android:id="@+id/topNewsFragment"
+        android:name="com.rabama.firetest01.ui.news.fragments.TopNewsFragment"
+        android:label="fragment_top_news"
+        tools:layout="@layout/fragment_top_news" />
+    <fragment
+        android:id="@+id/keywordNewsFragment"
+        android:name="com.rabama.firetest01.ui.news.fragments.KeywordNewsFragment"
+        android:label="fragment_keyword_news"
+        tools:layout="@layout/fragment_keyword_news" />
+    <fragment
+        android:id="@+id/categoryNewsFragment"
+        android:name="com.rabama.firetest01.ui.news.fragments.CategoryNewsFragment"
+        android:label="fragment_category_news"
+        tools:layout="@layout/fragment_category_news" />
+</navigation>
