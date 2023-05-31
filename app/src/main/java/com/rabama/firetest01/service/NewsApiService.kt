@@ -4,7 +4,6 @@ import com.rabama.firetest01.model.NewsResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 // Define las funciones que se pueden realizar en la API
@@ -31,6 +30,10 @@ interface NewsApiService {
     suspend fun getNews(@Query("q") keyword: String): NewsResponse
 
     // Noticias de una categoría en específico (en inglés)
+    /*
+     * Se puede utilizar sin country=us,
+     * pero la API devolvería muchas noticias sin imagen
+     */
     @GET("top-headlines?country=us&apiKey=$API_KEY")
     suspend fun getNewsByCategory(@Query("category") category: String): NewsResponse
 }

@@ -118,7 +118,7 @@ class NewsActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
         AlertDialog.Builder(this)
             .setTitle("¿Seguro que desea salir?")
             .setPositiveButton("Sí") { _, _ ->
-                super.finish()
+                finishAffinity()
             }
             .setNegativeButton("No", null)
             .show()

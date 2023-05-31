@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Newsreader</string>
-    <string name="prefs_file"> com.rabama.firetest01.root_preferences.xml </string>
+    <string name="prefs_file"> com.rabama.firetest01_preferences </string>
     <string name="current_web_client_id" translatable="false">477033718579-jtq5qrm76584svnjor1lkgiqki93mq8f.apps.googleusercontent.com</string>
     <string name="categories">Categories</string>
     <string name="registerPasswordError">Las contraseñas no coinciden</string>

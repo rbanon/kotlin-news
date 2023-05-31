@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/news_graph"
     app:startDestination="@id/topNewsFragment">
-
     <fragment
         android:id="@+id/topNewsFragment"
         android:name="com.rabama.firetest01.ui.news.fragments.TopNewsFragment"
